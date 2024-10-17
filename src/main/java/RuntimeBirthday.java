@@ -1,5 +1,3 @@
-package org.example;
-
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Random;
@@ -46,9 +44,9 @@ public class RuntimeBirthday {
             int exitCode = process.waitFor();
 
             if (exitCode == 0 && !hasError) {
-                System.out.println("BirthdayArgs executed successfully.");
+                System.out.println("\nBirthdayArgs executed successfully.");
             } else {
-                System.err.println("BirthdayArgs execution failed with exit code: " + exitCode);
+                System.err.println("\nBirthdayArgs execution failed with exit code: " + exitCode);
             }
         } catch (Exception e) {
             e.printStackTrace();
